@@ -9,6 +9,7 @@ from evaluation.metrics.retrieval import recall_at_k, reciprocal_rank, mean
 from app.retrieval.vector_store import vector_store
 from app.retrieval.bm25_service import bm25_retriever
 from app.retrieval.rrf import reciprocal_rank_fusion
+from app.retrieval import config as cfg
 
 
 RESULTS_DIR = Path("evaluation/results")
@@ -48,12 +49,15 @@ def normalize_vector_docs(docs: List[Any]) -> List[Dict[str, Any]]:
     return out
 
 
-def run_vector_baseline(k: int = 10):
+def run_vector_baseline(k: int | None = None):
     results = []
 
     recall_scores = {1: [], 5: [], 10: []}
     rr_scores = []
     latencies = []
+
+    if k is None:
+        k = cfg.VECTOR_K
 
     with DS_PATH.open("r", encoding="utf-8") as fh:
         for line in fh:
@@ -110,12 +114,15 @@ def run_vector_baseline(k: int = 10):
     print(f"Wrote results to {out_path}")
 
 
-def run_bm25_baseline(k: int = 10):
+def run_bm25_baseline(k: int | None = None):
     results = []
 
     recall_scores = {1: [], 5: [], 10: []}
     rr_scores = []
     latencies = []
+
+    if k is None:
+        k = cfg.BM25_K
 
     with DS_PATH.open("r", encoding="utf-8") as fh:
         for line in fh:
@@ -172,12 +179,21 @@ def run_bm25_baseline(k: int = 10):
     print(f"Wrote results to {out_path}")
 
 
-def run_rrf(k: int = 10, rrf_k: int = 60):
+def run_rrf(vec_k: int | None = None, bm_k: int | None = None, rrf_k: int | None = None, final_k: int | None = None):
     results = []
 
     recall_scores = {1: [], 5: [], 10: []}
     rr_scores = []
     latencies = []
+
+    if vec_k is None:
+        vec_k = cfg.VECTOR_K
+    if bm_k is None:
+        bm_k = cfg.BM25_K
+    if rrf_k is None:
+        rrf_k = cfg.RRF_K
+    if final_k is None:
+        final_k = cfg.FINAL_K
 
     with DS_PATH.open("r", encoding="utf-8") as fh:
         for line in fh:
@@ -187,17 +203,18 @@ def run_rrf(k: int = 10, rrf_k: int = 60):
 
             # run vector
             vec_start = time.perf_counter()
-            vec_docs = vector_store.similarity_search(query, k=k)
+            vec_docs = vector_store.similarity_search(query, k=vec_k)
             vec_latency = (time.perf_counter() - vec_start) * 1000.0
             vec_results = normalize_vector_docs(vec_docs)
 
             # run bm25
             bm_start = time.perf_counter()
-            bm_results = bm25_retriever.search(query, k=k)
+            bm_results = bm25_retriever.search(query, k=bm_k)
             bm_latency = (time.perf_counter() - bm_start) * 1000.0
 
             start = time.perf_counter()
-            fused = reciprocal_rank_fusion([vec_results, bm_results], k=rrf_k)
+            fused_all = reciprocal_rank_fusion([vec_results, bm_results], k=rrf_k)
+            fused = fused_all[:final_k]
             latency_ms = (time.perf_counter() - start) * 1000.0
 
             # build retrieved ids and compute metrics
@@ -251,16 +268,22 @@ def run_rrf(k: int = 10, rrf_k: int = 60):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", choices=["vector", "bm25", "rrf", "all"], default="all")
-    parser.add_argument("--k", type=int, default=10, help="top-k per retriever")
-    parser.add_argument("--rrf-k", type=int, default=60, help="RRF k parameter")
+    parser.add_argument("--vec-k", type=int, default=None, help="top-k for vector retriever (overrides config)")
+    parser.add_argument("--bm25-k", type=int, default=None, help="top-k for BM25 retriever (overrides config)")
+    parser.add_argument("--final-k", type=int, default=None, help="final top-k returned after fusion (overrides config)")
+    parser.add_argument("--rrf-k", type=int, default=None, help="RRF k parameter (overrides config)")
     args = parser.parse_args()
+    vec_k = args.vec_k if args.vec_k is not None else cfg.VECTOR_K
+    bm_k = args.bm25_k if args.bm25_k is not None else cfg.BM25_K
+    rrf_k = args.rrf_k if args.rrf_k is not None else cfg.RRF_K
+    final_k = args.final_k if args.final_k is not None else cfg.FINAL_K
 
     if args.mode in ("vector", "all"):
-        run_vector_baseline(k=args.k)
+        run_vector_baseline(k=vec_k)
     if args.mode in ("bm25", "all"):
-        run_bm25_baseline(k=args.k)
+        run_bm25_baseline(k=bm_k)
     if args.mode in ("rrf", "all"):
-        run_rrf(k=args.k, rrf_k=args.rrf_k)
+        run_rrf(vec_k=vec_k, bm_k=bm_k, rrf_k=rrf_k, final_k=final_k)
 
 
 if __name__ == "__main__":
