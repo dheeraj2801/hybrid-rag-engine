@@ -1,0 +1,1 @@
+{"id": "q001", "query": "How does Kafka consumer rebalancing work?", "relevant_documents": ["kafka_17", "kafka_42"], "reference_answer": "Kafka reassigns partitions among consumers when rebalance events occur."}
