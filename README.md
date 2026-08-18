@@ -92,40 +92,16 @@ source .venv/bin/activate
 python evaluation/runners/run_experiment.py --mode all
 ```
 
-Aggregate results (last run on the 150-query golden dataset):
+Aggregate results (last run on the 150-query golden dataset)
 
-Vector (semantic search)
-
-| Metric | Value |
-|---|---:|
-| Queries | 150 |
-| Recall@1 | 0.04 |
-| Recall@5 | 0.28 |
-| Recall@10 | 0.483 |
-| MRR | 0.141 |
-| Avg latency (ms) | 21.69 |
-
-BM25 (lexical)
-
-| Metric | Value |
-|---|---:|
-| Queries | 150 |
-| Recall@1 | 0.053 |
-| Recall@5 | 0.517 |
-| Recall@10 | 0.653 |
-| MRR | 0.221 |
-| Avg latency (ms) | 0.055 |
-
-RRF (vector + BM25 fusion)
-
-| Metric | Value |
-|---|---:|
-| Queries | 150 |
-| Recall@1 | 0.067 |
-| Recall@5 | 0.483 |
-| Recall@10 | 0.890 |
-| MRR | 0.272 |
-| Avg latency (ms) | 20.73 |
+| Metric | Vector (semantic) | BM25 (lexical) | RRF (fusion) |
+|---|---:|---:|---:|
+| Queries | 150 | 150 | 150 |
+| Recall@1 | 0.04 | 0.053 | 0.067 |
+| Recall@5 | 0.28 | 0.517 | 0.483 |
+| Recall@10 | 0.483 | 0.653 | 0.890 |
+| MRR | 0.141 | 0.221 | 0.272 |
+| Avg latency (ms) | 21.69 | 0.055 | 20.73 |
 
 Per-query details and the full retrieved candidate lists are saved in the `evaluation/results` JSON files linked above. Use the same golden dataset to run additional modes (hybrid, reranker) for fair comparisons.
 
