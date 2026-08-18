@@ -136,6 +136,7 @@ Per-category Recall@5:
 
 Notes: This baseline was chosen to maximize general-purpose retrieval performance across categories rather than optimizing for a single category. See `evaluation/results/rrf_asymmetric_grid.json` for the full sweep.
 
+
 Runner defaults
 
 All evaluation runners (`evaluation/runners/*.py`) now use the frozen retrieval baseline defined in `app/retrieval/config.py` by default (`VECTOR_K`, `BM25_K`, `RRF_K`, `FINAL_K`). Each runner still exposes CLI flags to override these values for experiments, for example:
