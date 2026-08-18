@@ -1,5 +1,8 @@
-class GraphState:
-    """Simple container for pipeline state"""
+from typing import TypedDict
 
-    def __init__(self):
-        self.data = {}
+
+class RAGState(TypedDict):
+    query: str
+    documents: list
+    context: str
+    answer: str

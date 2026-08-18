@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: hybrid-rag-benchmark
+Version: 0.1.0
+Summary: Hybrid RAG benchmarking scaffold
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: langgraph
+Requires-Dist: langchain-core
+Requires-Dist: langchain-openai
+Requires-Dist: langchain-qdrant
+Requires-Dist: langchain-huggingface
+Requires-Dist: langchain-text-splitters
+Requires-Dist: qdrant-client
+Requires-Dist: pydantic-settings
+Requires-Dist: python-dotenv
+Requires-Dist: ml>=0.1.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Provides-Extra: ml
+Requires-Dist: sentence-transformers; extra == "ml"
+Requires-Dist: torch; extra == "ml"
+Requires-Dist: transformers; extra == "ml"
+Dynamic: license-file

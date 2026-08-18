@@ -57,3 +57,18 @@ API
 
 POST `/query` accepts a JSON payload with `query`, `retrieval_mode`, and `top_k` and returns an `answer`, `sources`, and `retrieval` metadata.
 
+Model caching
+
+The embedding and transformer weights can be large and are downloaded the
+first time a model is instantiated. To avoid downloading on service startup
+and to cache the weights ahead of time, run:
+
+```bash
+# set HF token for authenticated downloads (recommended)
+export HF_TOKEN=your_hf_token_here
+python scripts/preload_models.py
+```
+
+This will download the model weights into your HF cache so the app starts
+without heavy downloads.
+
