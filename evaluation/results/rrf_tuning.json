@@ -1,0 +1,86 @@
+[
+  {
+    "vec_k": 10,
+    "bm_k": 10,
+    "rrf_k": 60,
+    "final_k": 5,
+    "overall_recall@5": 0.48333333333333334,
+    "per_category_recall@5": {
+      "semantic": 0.5333333333333333,
+      "exact": 0.6666666666666666,
+      "technical": 0.5,
+      "error_code": 0.3333333333333333,
+      "multi_concept": 0.38333333333333336
+    }
+  },
+  {
+    "vec_k": 20,
+    "bm_k": 20,
+    "rrf_k": 60,
+    "final_k": 5,
+    "overall_recall@5": 0.54,
+    "per_category_recall@5": {
+      "semantic": 0.5666666666666667,
+      "exact": 0.6333333333333333,
+      "technical": 0.6333333333333333,
+      "error_code": 0.4666666666666667,
+      "multi_concept": 0.4
+    }
+  },
+  {
+    "vec_k": 50,
+    "bm_k": 50,
+    "rrf_k": 60,
+    "final_k": 5,
+    "overall_recall@5": 0.54,
+    "per_category_recall@5": {
+      "semantic": 0.5666666666666667,
+      "exact": 0.6333333333333333,
+      "technical": 0.6333333333333333,
+      "error_code": 0.4666666666666667,
+      "multi_concept": 0.4
+    }
+  },
+  {
+    "vec_k": 10,
+    "bm_k": 10,
+    "rrf_k": 10,
+    "final_k": 5,
+    "overall_recall@5": 0.48333333333333334,
+    "per_category_recall@5": {
+      "semantic": 0.5333333333333333,
+      "exact": 0.6666666666666666,
+      "technical": 0.5,
+      "error_code": 0.3333333333333333,
+      "multi_concept": 0.38333333333333336
+    }
+  },
+  {
+    "vec_k": 10,
+    "bm_k": 10,
+    "rrf_k": 30,
+    "final_k": 5,
+    "overall_recall@5": 0.48333333333333334,
+    "per_category_recall@5": {
+      "semantic": 0.5333333333333333,
+      "exact": 0.6666666666666666,
+      "technical": 0.5,
+      "error_code": 0.3333333333333333,
+      "multi_concept": 0.38333333333333336
+    }
+  },
+  {
+    "vec_k": 100,
+    "bm_k": 100,
+    "rrf_k": 60,
+    "final_k": 5,
+    "overall_recall@5": 0.54,
+    "per_category_recall@5": {
+      "semantic": 0.5666666666666667,
+      "exact": 0.6333333333333333,
+      "technical": 0.6333333333333333,
+      "error_code": 0.4666666666666667,
+      "multi_concept": 0.4
+    }
+  }
+]

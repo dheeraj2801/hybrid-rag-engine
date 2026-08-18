@@ -17,6 +17,7 @@ dependencies = [
 	"pydantic-settings",
 	"python-dotenv",
 	"ml>=0.1.0",
+	"rank-bm25>=0.2.2",
 ]
 
 [project.optional-dependencies]

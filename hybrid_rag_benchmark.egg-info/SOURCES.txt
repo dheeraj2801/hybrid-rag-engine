@@ -39,6 +39,7 @@ evaluation/experiments/hybrid_rrf.py
 evaluation/experiments/vector_only.py
 evaluation/metrics/generation.py
 evaluation/metrics/retrieval.py
+evaluation/runners/run_experiment.py
 hybrid_rag_benchmark.egg-info/PKG-INFO
 hybrid_rag_benchmark.egg-info/SOURCES.txt
 hybrid_rag_benchmark.egg-info/dependency_links.txt

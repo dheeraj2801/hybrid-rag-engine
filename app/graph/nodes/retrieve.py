@@ -1,12 +1,8 @@
-from app.retrieval.vector_store import vector_store
+from app.retrieval.vector_service import search as vector_search
 
 
 def retrieve(state):
-
-    results = vector_store.similarity_search(
-        state["query"],
-        k=5,
-    )
+    results = vector_search(state["query"], k=5)
 
     return {
         "documents": results,

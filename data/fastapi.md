@@ -73,3 +73,35 @@ When to use FastAPI
 
 - Building async APIs with strong validation guarantees and automatic docs.
 - Integrating with async database drivers and external async services.
+
+
+Use async routes when your endpoint performs I/O-bound work (database calls, HTTP requests, long polling). Async handlers enable high concurrency with fewer threads by allowing the event loop to schedule other work while awaiting I/O. Prefer sync handlers for CPU-bound tasks or when using libraries that are not async-aware; offload CPU-heavy work to background workers or process pools.
+
+Interactive docs: `/docs` (Swagger UI) and `/redoc` (ReDoc).
+
+Health and metrics endpoints: expose `/health` and `/metrics` for monitoring and liveness/readiness checks.
+
+Dependency injection: `Depends()` provides a way to declare and reuse components like DB sessions or auth validators.
+
+BackgroundTasks: execute short, non-critical work after a response is returned.
+
+Example — dependency:
+
+```python
+from fastapi import Depends
+
+def get_db():
+	db = SessionLocal()
+	try:
+		yield db
+	finally:
+		db.close()
+
+@app.get('/items')
+def list_items(db=Depends(get_db)):
+	return db.query(Item).all()
+```
+
+Return structured error payloads with an `error` object and an appropriate HTTP status. Use Pydantic models to validate input and return `422` for invalid payloads. For authentication/authorization use `401`/`403` and include instructions for token renewal when appropriate.
+
+Combine unit tests via `TestClient`, CI-based lint/type checks, and production readiness by running under a process manager and exposing `/metrics` for Prometheus scraping. This combined view ensures the same code paths are exercised in tests and production, improving reliability.

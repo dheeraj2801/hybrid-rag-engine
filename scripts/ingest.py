@@ -16,6 +16,7 @@ def main():
 
     metadatas = [
         {
+            "chunk_id": chunk["id"],
             "source": chunk["source"],
             "parent_id": chunk["parent_id"],
             "orig_id": chunk["id"],

@@ -16,6 +16,7 @@ Requires-Dist: qdrant-client
 Requires-Dist: pydantic-settings
 Requires-Dist: python-dotenv
 Requires-Dist: ml>=0.1.0
+Requires-Dist: rank-bm25>=0.2.2
 Provides-Extra: dev
 Requires-Dist: pytest>=7.0; extra == "dev"
 Provides-Extra: ml

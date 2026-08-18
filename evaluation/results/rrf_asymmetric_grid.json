@@ -1,0 +1,104 @@
+[
+  {
+    "vec_k": 10,
+    "bm_k": 20,
+    "rrf_k": 60,
+    "final_k": 5,
+    "num_queries": 150,
+    "overall_recall@5": 0.48333333333333334,
+    "mrr": 0.22588888888888883,
+    "avg_latency_ms": 24.04961722670123,
+    "per_category_recall@5": {
+      "semantic": 0.5333333333333333,
+      "exact": 0.6666666666666666,
+      "technical": 0.5,
+      "error_code": 0.3333333333333333,
+      "multi_concept": 0.38333333333333336
+    }
+  },
+  {
+    "vec_k": 10,
+    "bm_k": 50,
+    "rrf_k": 60,
+    "final_k": 5,
+    "num_queries": 150,
+    "overall_recall@5": 0.48333333333333334,
+    "mrr": 0.22588888888888883,
+    "avg_latency_ms": 22.191700259378802,
+    "per_category_recall@5": {
+      "semantic": 0.5333333333333333,
+      "exact": 0.6666666666666666,
+      "technical": 0.5,
+      "error_code": 0.3333333333333333,
+      "multi_concept": 0.38333333333333336
+    }
+  },
+  {
+    "vec_k": 20,
+    "bm_k": 50,
+    "rrf_k": 60,
+    "final_k": 5,
+    "num_queries": 150,
+    "overall_recall@5": 0.54,
+    "mrr": 0.23877777777777776,
+    "avg_latency_ms": 25.586374367121607,
+    "per_category_recall@5": {
+      "semantic": 0.5666666666666667,
+      "exact": 0.6333333333333333,
+      "technical": 0.6333333333333333,
+      "error_code": 0.4666666666666667,
+      "multi_concept": 0.4
+    }
+  },
+  {
+    "vec_k": 20,
+    "bm_k": 50,
+    "rrf_k": 30,
+    "final_k": 5,
+    "num_queries": 150,
+    "overall_recall@5": 0.5266666666666666,
+    "mrr": 0.23033333333333322,
+    "avg_latency_ms": 24.285529130914558,
+    "per_category_recall@5": {
+      "semantic": 0.5666666666666667,
+      "exact": 0.5666666666666667,
+      "technical": 0.5666666666666667,
+      "error_code": 0.5333333333333333,
+      "multi_concept": 0.4
+    }
+  },
+  {
+    "vec_k": 10,
+    "bm_k": 50,
+    "rrf_k": 30,
+    "final_k": 5,
+    "num_queries": 150,
+    "overall_recall@5": 0.48333333333333334,
+    "mrr": 0.2179999999999999,
+    "avg_latency_ms": 25.373651351158816,
+    "per_category_recall@5": {
+      "semantic": 0.5333333333333333,
+      "exact": 0.6666666666666666,
+      "technical": 0.5,
+      "error_code": 0.3333333333333333,
+      "multi_concept": 0.38333333333333336
+    }
+  },
+  {
+    "vec_k": 20,
+    "bm_k": 20,
+    "rrf_k": 60,
+    "final_k": 5,
+    "num_queries": 150,
+    "overall_recall@5": 0.54,
+    "mrr": 0.23877777777777776,
+    "avg_latency_ms": 25.565606150776148,
+    "per_category_recall@5": {
+      "semantic": 0.5666666666666667,
+      "exact": 0.6333333333333333,
+      "technical": 0.6333333333333333,
+      "error_code": 0.4666666666666667,
+      "multi_concept": 0.4
+    }
+  }
+]

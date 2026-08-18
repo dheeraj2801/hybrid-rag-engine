@@ -64,3 +64,33 @@ References
 
 - Kafka docs: https://kafka.apache.org
 - aiokafka, confluent-kafka Python clients
+
+When evaluating whether to use Kafka, consider throughput, ordering, and durability requirements. Kafka is appropriate when you need a durable, partitioned log with replayability and high throughput. For lightweight pub/sub or low-throughput eventing, managed message queues or simple HTTP-based webhooks may be preferable. Architect for scale by planning partition counts, horizontal consumer groups, and proper monitoring of lag and broker resource usage.
+
+Inspect consumer groups and offsets:
+
+```sh
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group my-group
+```
+
+Check broker log location and tail errors (example path depends on installation):
+
+```sh
+tail -f /var/log/kafka/server.log
+```
+
+Partition: an ordered, immutable sequence of records within a topic; the primary unit of parallelism.
+
+Offset: a numerical index for a message within a partition.
+
+Replication factor: number of brokers storing copies of a partition for fault tolerance.
+
+Log compaction: retention policy that keeps only the latest value for each message key.
+
+`NotLeaderForPartition`: producer attempted to write to a broker that is not the leader; reconcile by refreshing metadata, checking leader election, and ensuring brokers are healthy.
+
+`OffsetOutOfRange`: consumer requested an offset that no longer exists, often after retention; handle by resetting offsets (earliest/latest) or using committed checkpoints.
+
+Broker OOM / disk full: monitor disk usage and JVM memory; add retention/compaction or increase storage.
+
+Improving both throughput and durability requires tuning several levers: increase partitions to scale throughput, set replication factor >1 for durability, tune producer batching (`linger.ms`, `batch.size`) and acks (e.g., `acks=all`) for stronger durability guarantees, and monitor via JMX/Prometheus. Design for operational recovery (automated broker replacement, partition reassignment) and test rebalancing effects on consumer lag in staging.

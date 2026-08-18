@@ -1,0 +1,422 @@
+[
+  {
+    "id": "q091",
+    "query": "[error_code] example query number 91 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "fastapi_2",
+      "python_0",
+      "python_1",
+      "python_2"
+    ]
+  },
+  {
+    "id": "q092",
+    "query": "[error_code] example query number 92 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "python_0",
+      "fastapi_2",
+      "python_1",
+      "python_2"
+    ]
+  },
+  {
+    "id": "q094",
+    "query": "[error_code] example query number 94 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "python_0",
+      "fastapi_2",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q095",
+    "query": "[error_code] example query number 95 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "python_0",
+      "fastapi_2",
+      "python_1",
+      "python_2"
+    ]
+  },
+  {
+    "id": "q097",
+    "query": "[error_code] example query number 97 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "python_0",
+      "fastapi_2",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q098",
+    "query": "[error_code] example query number 98 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "python_0",
+      "fastapi_2",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q100",
+    "query": "[error_code] example query number 100 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "fastapi_0",
+      "fastapi_2",
+      "python_0",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q101",
+    "query": "[error_code] example query number 101 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "python_0",
+      "fastapi_2",
+      "python_1",
+      "python_2"
+    ]
+  },
+  {
+    "id": "q103",
+    "query": "[error_code] example query number 103 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "fastapi_0",
+      "fastapi_2",
+      "python_0",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q104",
+    "query": "[error_code] example query number 104 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "python_0",
+      "fastapi_2",
+      "python_1",
+      "python_2"
+    ]
+  },
+  {
+    "id": "q106",
+    "query": "[error_code] example query number 106 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "fastapi_2",
+      "python_0",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q107",
+    "query": "[error_code] example query number 107 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "fastapi_2",
+      "python_0",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q109",
+    "query": "[error_code] example query number 109 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "python_1",
+      "python_0",
+      "fastapi_2",
+      "python_2"
+    ]
+  },
+  {
+    "id": "q110",
+    "query": "[error_code] example query number 110 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "fastapi_2",
+      "python_0",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q112",
+    "query": "[error_code] example query number 112 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "python_0",
+      "fastapi_2",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q113",
+    "query": "[error_code] example query number 113 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "python_0",
+      "fastapi_2",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q115",
+    "query": "[error_code] example query number 115 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "python_0",
+      "fastapi_2",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q116",
+    "query": "[error_code] example query number 116 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "python_0",
+      "fastapi_2",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q118",
+    "query": "[error_code] example query number 118 about error_code topics",
+    "relevant": [
+      "kafka_2"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "fastapi_2",
+      "python_0",
+      "python_1"
+    ]
+  },
+  {
+    "id": "q119",
+    "query": "[error_code] example query number 119 about error_code topics",
+    "relevant": [
+      "fastapi_0"
+    ],
+    "bm25_top5": [
+      "fastapi_1",
+      "kafka_5",
+      "fastapi_0",
+      "kafka_0",
+      "kafka_2"
+    ],
+    "rrf_top5": [
+      "fastapi_1",
+      "kafka_1",
+      "python_0",
+      "fastapi_2",
+      "python_1"
+    ]
+  }
+]

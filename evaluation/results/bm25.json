@@ -1,52 +1,52 @@
 {
-  "mode": "vector",
+  "mode": "bm25",
   "num_queries": 150,
   "aggregate": {
-    "recall@1": 0.04,
-    "recall@5": 0.28,
-    "recall@10": 0.48333333333333334,
-    "mrr": 0.14139682539682516,
-    "avg_latency_ms": 21.68996308542167
+    "recall@1": 0.05333333333333334,
+    "recall@5": 0.5166666666666667,
+    "recall@10": 0.6533333333333333,
+    "mrr": 0.22141534391534384,
+    "avg_latency_ms": 0.054589794017374516
   },
   "per_query": [
     {
       "id": "q001",
       "query": "[semantic] example query number 1 about semantic topics",
       "retrieved_ids": [
-        "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
         "kafka_1",
-        "kafka_1",
+        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_6",
+        "kafka_2",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 49.11891603842378
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.24329195730388165
     },
     {
       "id": "q002",
       "query": "[semantic] example query number 2 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
+        "kafka_2",
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -54,23 +54,23 @@
       "recall@1": 0.0,
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 28.486208990216255
+      "reciprocal_rank": 0.5,
+      "latency_ms": 0.06887491326779127
     },
     {
       "id": "q003",
       "query": "[semantic] example query number 3 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
-        "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "fastapi_1",
+        "kafka_5",
+        "kafka_0",
+        "python_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4"
       ],
       "relevant_ids": [
         "python_2"
@@ -79,190 +79,190 @@
       "recall@5": 0.0,
       "recall@10": 0.0,
       "reciprocal_rank": 0.0,
-      "latency_ms": 28.058583033271134
+      "latency_ms": 0.06008404307067394
     },
     {
       "id": "q004",
       "query": "[semantic] example query number 4 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
+        "fastapi_2",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4"
       ],
       "relevant_ids": [
         "kafka_3"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 29.982291045598686
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.1111111111111111,
+      "latency_ms": 0.05379202775657177
     },
     {
       "id": "q005",
       "query": "[semantic] example query number 5 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
       ],
-      "recall@1": 0.0,
+      "recall@1": 1.0,
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 27.836666093207896
+      "reciprocal_rank": 1.0,
+      "latency_ms": 0.052749994210898876
     },
     {
       "id": "q006",
       "query": "[semantic] example query number 6 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
-      ],
-      "relevant_ids": [
-        "python_1"
-      ],
-      "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 25.627125054597855
-    },
-    {
-      "id": "q007",
-      "query": "[semantic] example query number 7 about semantic topics",
-      "retrieved_ids": [
-        "python_0",
-        "python_0",
-        "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
-        "kafka_2"
+        "python_1"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
       "reciprocal_rank": 0.0,
-      "latency_ms": 29.140874976292253
+      "latency_ms": 0.05224999040365219
+    },
+    {
+      "id": "q007",
+      "query": "[semantic] example query number 7 about semantic topics",
+      "retrieved_ids": [
+        "fastapi_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
+      ],
+      "relevant_ids": [
+        "kafka_2"
+      ],
+      "recall@1": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.05162495654076338
     },
     {
       "id": "q008",
       "query": "[semantic] example query number 8 about semantic topics",
       "retrieved_ids": [
-        "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "fastapi_1",
+        "kafka_5",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
       ],
-      "recall@1": 1.0,
+      "recall@1": 0.0,
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 1.0,
-      "latency_ms": 31.094582984223962
+      "reciprocal_rank": 0.5,
+      "latency_ms": 0.05316699389368296
     },
     {
       "id": "q009",
       "query": "[semantic] example query number 9 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 30.4787919158116
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.0576250022277236
     },
     {
       "id": "q010",
       "query": "[semantic] example query number 10 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4"
       ],
       "relevant_ids": [
         "kafka_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
+      "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.50491697061807
+      "reciprocal_rank": 0.14285714285714285,
+      "latency_ms": 0.05291705019772053
     },
     {
       "id": "q011",
       "query": "[semantic] example query number 11 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -271,22 +271,22 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 18.813250004313886
+      "latency_ms": 0.05124998278915882
     },
     {
       "id": "q012",
       "query": "[semantic] example query number 12 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_3"
@@ -295,46 +295,46 @@
       "recall@5": 0.0,
       "recall@10": 0.0,
       "reciprocal_rank": 0.0,
-      "latency_ms": 16.988291055895388
+      "latency_ms": 0.05070806946605444
     },
     {
       "id": "q013",
       "query": "[semantic] example query number 13 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
+      "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 19.719458068720996
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.0504170311614871
     },
     {
       "id": "q014",
       "query": "[semantic] example query number 14 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -343,22 +343,22 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 19.701083074323833
+      "latency_ms": 0.05558389239013195
     },
     {
       "id": "q015",
       "query": "[semantic] example query number 15 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_2"
@@ -367,46 +367,46 @@
       "recall@5": 0.0,
       "recall@10": 0.0,
       "reciprocal_rank": 0.0,
-      "latency_ms": 18.61129200551659
+      "latency_ms": 0.05083298310637474
     },
     {
       "id": "q016",
       "query": "[semantic] example query number 16 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_3"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 16.33883302565664
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.125,
+      "latency_ms": 0.05549995694309473
     },
     {
       "id": "q017",
       "query": "[semantic] example query number 17 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -415,22 +415,22 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 17.241250025108457
+      "latency_ms": 0.050458009354770184
     },
     {
       "id": "q018",
       "query": "[semantic] example query number 18 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_1"
@@ -439,142 +439,142 @@
       "recall@5": 0.0,
       "recall@10": 0.0,
       "reciprocal_rank": 0.0,
-      "latency_ms": 17.212458071298897
+      "latency_ms": 0.05012506153434515
     },
     {
       "id": "q019",
       "query": "[semantic] example query number 19 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "kafka_0",
-        "kafka_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 18.8715000404045
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.051292008720338345
     },
     {
       "id": "q020",
       "query": "[semantic] example query number 20 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
       ],
-      "recall@1": 0.0,
+      "recall@1": 1.0,
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 19.157500006258488
+      "reciprocal_rank": 1.0,
+      "latency_ms": 0.0512079568579793
     },
     {
       "id": "q021",
       "query": "[semantic] example query number 21 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 18.88137497007847
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.050709000788629055
     },
     {
       "id": "q022",
       "query": "[semantic] example query number 22 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
+      "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.321667030453682
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.053875031881034374
     },
     {
       "id": "q023",
       "query": "[semantic] example query number 23 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
       ],
-      "recall@1": 0.0,
+      "recall@1": 1.0,
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 17.687082989141345
+      "reciprocal_rank": 1.0,
+      "latency_ms": 0.05866703577339649
     },
     {
       "id": "q024",
       "query": "[semantic] example query number 24 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_3"
@@ -583,46 +583,46 @@
       "recall@5": 0.0,
       "recall@10": 0.0,
       "reciprocal_rank": 0.0,
-      "latency_ms": 20.27474995702505
+      "latency_ms": 0.05162495654076338
     },
     {
       "id": "q025",
       "query": "[semantic] example query number 25 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 18.74412503093481
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.049875001423060894
     },
     {
       "id": "q026",
       "query": "[semantic] example query number 26 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -631,22 +631,22 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 22.433499922044575
+      "latency_ms": 0.05100003909319639
     },
     {
       "id": "q027",
       "query": "[semantic] example query number 27 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_2"
@@ -655,46 +655,46 @@
       "recall@5": 0.0,
       "recall@10": 0.0,
       "reciprocal_rank": 0.0,
-      "latency_ms": 23.68958410806954
+      "latency_ms": 0.050458009354770184
     },
     {
       "id": "q028",
       "query": "[semantic] example query number 28 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_3"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 24.425750016234815
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.125,
+      "latency_ms": 0.05112506914883852
     },
     {
       "id": "q029",
       "query": "[semantic] example query number 29 about semantic topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -703,22 +703,22 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 24.42704199347645
+      "latency_ms": 0.050709000788629055
     },
     {
       "id": "q030",
       "query": "[semantic] example query number 30 about semantic topics",
       "retrieved_ids": [
-        "python_0",
-        "python_0",
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_1"
@@ -727,22 +727,22 @@
       "recall@5": 0.0,
       "recall@10": 0.0,
       "reciprocal_rank": 0.0,
-      "latency_ms": 26.701249997131526
+      "latency_ms": 0.050332979299128056
     },
     {
       "id": "q031",
       "query": "[exact] example query number 31 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -751,70 +751,70 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 23.51420803461224
+      "latency_ms": 0.050749978981912136
     },
     {
       "id": "q032",
       "query": "[exact] example query number 32 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 25.074834004044533
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.05749997217208147
     },
     {
       "id": "q033",
       "query": "[exact] example query number 33 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 23.141125100664794
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.05983398295938969
     },
     {
       "id": "q034",
       "query": "[exact] example query number 34 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -822,71 +822,71 @@
       "recall@1": 0.0,
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 25.865042000077665
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.05324999801814556
     },
     {
       "id": "q035",
       "query": "[exact] example query number 35 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_2",
-        "python_2"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 24.859291967004538
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.05112506914883852
     },
     {
       "id": "q036",
       "query": "[exact] example query number 36 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 24.830124923028052
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.05691696424037218
     },
     {
       "id": "q037",
       "query": "[exact] example query number 37 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -894,287 +894,287 @@
       "recall@1": 0.0,
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 30.9722499223426
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.05033309571444988
     },
     {
       "id": "q038",
       "query": "[exact] example query number 38 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 26.26075001899153
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04945893306285143
     },
     {
       "id": "q039",
       "query": "[exact] example query number 39 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 24.51599994674325
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.05191704258322716
     },
     {
       "id": "q040",
       "query": "[exact] example query number 40 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
+      "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 22.097499924711883
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.04995905328541994
     },
     {
       "id": "q041",
       "query": "[exact] example query number 41 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_2",
-        "python_2"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 22.126249969005585
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.050083035603165627
     },
     {
       "id": "q042",
       "query": "[exact] example query number 42 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0",
-        "python_2",
-        "python_2"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 22.043374949134886
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.05016603972762823
     },
     {
       "id": "q043",
       "query": "[exact] example query number 43 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
+      "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 24.295125040225685
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.04945893306285143
     },
     {
       "id": "q044",
       "query": "[exact] example query number 44 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 24.580458062700927
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.049208058044314384
     },
     {
       "id": "q045",
       "query": "[exact] example query number 45 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 25.018124957568944
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04983402322977781
     },
     {
       "id": "q046",
       "query": "[exact] example query number 46 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
+      "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 25.10900003835559
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.04995905328541994
     },
     {
       "id": "q047",
       "query": "[exact] example query number 47 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 25.520334020256996
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.050083035603165627
     },
     {
       "id": "q048",
       "query": "[exact] example query number 48 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1",
-        "python_0",
-        "python_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 25.590708013623953
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04991691093891859
     },
     {
       "id": "q049",
       "query": "[exact] example query number 49 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1",
-        "python_0",
-        "python_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1182,143 +1182,143 @@
       "recall@1": 0.0,
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 28.916124952957034
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.05024997517466545
     },
     {
       "id": "q050",
       "query": "[exact] example query number 50 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 27.834290987811983
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04958396311849356
     },
     {
       "id": "q051",
       "query": "[exact] example query number 51 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 25.160874938592315
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04991702735424042
     },
     {
       "id": "q052",
       "query": "[exact] example query number 52 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
+      "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 26.6572090331465
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.05562498699873686
     },
     {
       "id": "q053",
       "query": "[exact] example query number 53 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 24.646291974931955
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04975008778274059
     },
     {
       "id": "q054",
       "query": "[exact] example query number 54 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1",
-        "python_0",
-        "python_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 27.591000078245997
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.05008408334106207
     },
     {
       "id": "q055",
       "query": "[exact] example query number 55 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1327,70 +1327,70 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 28.33687502425164
+      "latency_ms": 0.049332971684634686
     },
     {
       "id": "q056",
       "query": "[exact] example query number 56 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 25.680916965939105
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04945893306285143
     },
     {
       "id": "q057",
       "query": "[exact] example query number 57 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 16.3540419889614
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04979199729859829
     },
     {
       "id": "q058",
       "query": "[exact] example query number 58 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1399,94 +1399,94 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 16.264333040453494
+      "latency_ms": 0.049459049478173256
     },
     {
       "id": "q059",
       "query": "[exact] example query number 59 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 16.25362492632121
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04983402322977781
     },
     {
       "id": "q060",
       "query": "[exact] example query number 60 about exact topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 20.11608297470957
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04937499761581421
     },
     {
       "id": "q061",
       "query": "[technical] example query number 61 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 17.94929103925824
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.05129189230501652
     },
     {
       "id": "q062",
       "query": "[technical] example query number 62 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -1494,23 +1494,23 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 20.302082994021475
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.05037500523030758
     },
     {
       "id": "q063",
       "query": "[technical] example query number 63 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_1"
@@ -1519,358 +1519,358 @@
       "recall@5": 0.0,
       "recall@10": 0.0,
       "reciprocal_rank": 0.0,
-      "latency_ms": 17.610249924473464
+      "latency_ms": 0.05016603972762823
     },
     {
       "id": "q064",
       "query": "[technical] example query number 64 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 16.088624950498343
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.05016708746552467
     },
     {
       "id": "q065",
       "query": "[technical] example query number 65 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 16.4266669889912
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.05020794924348593
     },
     {
       "id": "q066",
       "query": "[technical] example query number 66 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
+      "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 17.597374971956015
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.050042057409882545
     },
     {
       "id": "q067",
       "query": "[technical] example query number 67 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_1"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 17.598000005818903
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.05062494892627001
     },
     {
       "id": "q068",
       "query": "[technical] example query number 68 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 16.765958978794515
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.050709000788629055
     },
     {
       "id": "q069",
       "query": "[technical] example query number 69 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 17.712250002659857
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.050709000788629055
     },
     {
       "id": "q070",
       "query": "[technical] example query number 70 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
+      "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.786166958510876
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.05024997517466545
     },
     {
       "id": "q071",
       "query": "[technical] example query number 71 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_1"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 19.182875053957105
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.050165923312306404
     },
     {
       "id": "q072",
       "query": "[technical] example query number 72 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 22.599624935537577
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.05000003147870302
     },
     {
       "id": "q073",
       "query": "[technical] example query number 73 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 25.460459059104323
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.049833906814455986
     },
     {
       "id": "q074",
       "query": "[technical] example query number 74 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
+      "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 25.42012499179691
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.0500829191878438
     },
     {
       "id": "q075",
       "query": "[technical] example query number 75 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_1"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 24.223624961450696
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.05091703496873379
     },
     {
       "id": "q076",
       "query": "[technical] example query number 76 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 24.07749998383224
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.052582938224077225
     },
     {
       "id": "q077",
       "query": "[technical] example query number 77 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 24.845415959134698
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.05029106978327036
     },
     {
       "id": "q078",
       "query": "[technical] example query number 78 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -1878,191 +1878,191 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 24.244583095423877
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.08058396633714437
     },
     {
       "id": "q079",
       "query": "[technical] example query number 79 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_1"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 26.861291960813105
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.16320799477398396
     },
     {
       "id": "q080",
       "query": "[technical] example query number 80 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 23.960249964147806
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.05304196383804083
     },
     {
       "id": "q081",
       "query": "[technical] example query number 81 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 22.76487508788705
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.06912497337907553
     },
     {
       "id": "q082",
       "query": "[technical] example query number 82 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
+      "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 23.709625005722046
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.05041609983891249
     },
     {
       "id": "q083",
       "query": "[technical] example query number 83 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_1"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 23.23920896742493
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.051749986596405506
     },
     {
       "id": "q084",
       "query": "[technical] example query number 84 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_2",
-        "python_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 23.156666895374656
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.10837498120963573
     },
     {
       "id": "q085",
       "query": "[technical] example query number 85 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 25.23904200643301
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.10445807129144669
     },
     {
       "id": "q086",
       "query": "[technical] example query number 86 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -2070,95 +2070,95 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 26.594124967232347
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.06258301436901093
     },
     {
       "id": "q087",
       "query": "[technical] example query number 87 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_1"
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 26.601208024658263
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.05537504330277443
     },
     {
       "id": "q088",
       "query": "[technical] example query number 88 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
+      "recall@5": 1.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 25.256916065700352
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.05295802839100361
     },
     {
       "id": "q089",
       "query": "[technical] example query number 89 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
-        "fastapi_2",
-        "fastapi_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 25.391582981683314
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.056292046792805195
     },
     {
       "id": "q090",
       "query": "[technical] example query number 90 about technical topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1",
-        "fastapi_2",
-        "fastapi_2"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -2166,743 +2166,743 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 1.0,
-      "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 28.526125010102987
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.05224999040365219
     },
     {
       "id": "q091",
       "query": "[error_code] example query number 91 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
-        "python_2",
-        "python_2"
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 26.798957958817482
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.05354208406060934
     },
     {
       "id": "q092",
       "query": "[error_code] example query number 92 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
-        "python_2",
-        "python_2"
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 17.18125003390014
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.0625409884378314
     },
     {
       "id": "q093",
       "query": "[error_code] example query number 93 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 16.3871250115335
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.18466694746166468
     },
     {
       "id": "q094",
       "query": "[error_code] example query number 94 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 17.32362504117191
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.09220791980624199
     },
     {
       "id": "q095",
       "query": "[error_code] example query number 95 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
-        "python_2",
-        "python_2"
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 18.539250013418496
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.05291705019772053
     },
     {
       "id": "q096",
       "query": "[error_code] example query number 96 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 20.14637493994087
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.0529169337823987
     },
     {
       "id": "q097",
       "query": "[error_code] example query number 97 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.284167025238276
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.05108397454023361
     },
     {
       "id": "q098",
       "query": "[error_code] example query number 98 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 19.389582914300263
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.051541952416300774
     },
     {
       "id": "q099",
       "query": "[error_code] example query number 99 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
-        "python_2",
-        "python_2"
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 20.637915935367346
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.049666035920381546
     },
     {
       "id": "q100",
       "query": "[error_code] example query number 100 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 19.805666990578175
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.04708394408226013
     },
     {
       "id": "q101",
       "query": "[error_code] example query number 101 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
-        "python_2",
-        "python_2"
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.25966695509851
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.047083012759685516
     },
     {
       "id": "q102",
       "query": "[error_code] example query number 102 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.656958989799023
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.0480839516967535
     },
     {
       "id": "q103",
       "query": "[error_code] example query number 103 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.055791013874114
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.048165908083319664
     },
     {
       "id": "q104",
       "query": "[error_code] example query number 104 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
-        "python_2",
-        "python_2"
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.63929196447134
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.047332956455647945
     },
     {
       "id": "q105",
       "query": "[error_code] example query number 105 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
-        "python_2",
-        "python_2"
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.34320805594325
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04766706842929125
     },
     {
       "id": "q106",
       "query": "[error_code] example query number 106 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.33437497448176
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.047666020691394806
     },
     {
       "id": "q107",
       "query": "[error_code] example query number 107 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 19.878749968484044
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.04754192195832729
     },
     {
       "id": "q108",
       "query": "[error_code] example query number 108 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 20.018375013023615
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04766695201396942
     },
     {
       "id": "q109",
       "query": "[error_code] example query number 109 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_1",
-        "python_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_2",
-        "python_2"
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 19.869291922077537
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.049875001423060894
     },
     {
       "id": "q110",
       "query": "[error_code] example query number 110 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 19.524417002685368
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.04716706462204456
     },
     {
       "id": "q111",
       "query": "[error_code] example query number 111 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
-        "fastapi_2",
-        "fastapi_2",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 19.56675003748387
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04683306906372309
     },
     {
       "id": "q112",
       "query": "[error_code] example query number 112 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 19.196624984033406
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.046791043132543564
     },
     {
       "id": "q113",
       "query": "[error_code] example query number 113 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 17.814624938182533
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.04654203075915575
     },
     {
       "id": "q114",
       "query": "[error_code] example query number 114 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 16.410040901973844
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04633399657905102
     },
     {
       "id": "q115",
       "query": "[error_code] example query number 115 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 16.922667040489614
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.04904100205749273
     },
     {
       "id": "q116",
       "query": "[error_code] example query number 116 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 16.352167003788054
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.04691607318818569
     },
     {
       "id": "q117",
       "query": "[error_code] example query number 117 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.12841701414436
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04712492227554321
     },
     {
       "id": "q118",
       "query": "[error_code] example query number 118 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 19.351124996319413
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.04724995233118534
     },
     {
       "id": "q119",
       "query": "[error_code] example query number 119 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "fastapi_2",
-        "fastapi_2",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
         "kafka_1",
-        "kafka_1"
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "fastapi_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 18.986582988873124
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 0.04670792259275913
     },
     {
       "id": "q120",
       "query": "[error_code] example query number 120 about error_code topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "fastapi_2",
-        "fastapi_2",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
-        "python_2",
-        "python_2"
+        "kafka_5",
+        "fastapi_0",
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "python_0"
       ],
       "recall@1": 0.0,
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.36287502758205
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 0.04695798270404339
     },
     {
       "id": "q121",
       "query": "[multi_concept] example query number 121 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -2911,73 +2911,73 @@
       "recall@1": 0.0,
       "recall@5": 0.5,
       "recall@10": 0.5,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 20.228957990184426
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04758394788950682
     },
     {
       "id": "q122",
       "query": "[multi_concept] example query number 122 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "fastapi_0",
+        "kafka_5",
         "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1",
         "python_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.5,
+      "recall@5": 0.0,
       "recall@10": 0.5,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 18.738458049483597
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.04712503869086504
     },
     {
       "id": "q123",
       "query": "[multi_concept] example query number 123 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2",
         "python_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 18.48033396527171
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.04654203075915575
     },
     {
       "id": "q124",
       "query": "[multi_concept] example query number 124 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -2985,24 +2985,24 @@
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 17.10737496614456
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.125,
+      "latency_ms": 0.046874978579580784
     },
     {
       "id": "q125",
       "query": "[multi_concept] example query number 125 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3011,73 +3011,73 @@
       "recall@1": 0.0,
       "recall@5": 0.5,
       "recall@10": 0.5,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 18.119000014849007
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.046874978579580784
     },
     {
       "id": "q126",
       "query": "[multi_concept] example query number 126 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
+        "fastapi_0",
         "kafka_0",
-        "kafka_0"
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1",
         "python_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 21.435917005874217
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.047625042498111725
     },
     {
       "id": "q127",
       "query": "[multi_concept] example query number 127 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2",
         "python_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 19.420208991505206
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.04704098682850599
     },
     {
       "id": "q128",
       "query": "[multi_concept] example query number 128 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3085,24 +3085,24 @@
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.009250030852854
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.125,
+      "latency_ms": 0.04724995233118534
     },
     {
       "id": "q129",
       "query": "[multi_concept] example query number 129 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3111,73 +3111,73 @@
       "recall@1": 0.0,
       "recall@5": 0.5,
       "recall@10": 0.5,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.16358305606991
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04745891783386469
     },
     {
       "id": "q130",
       "query": "[multi_concept] example query number 130 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1",
         "python_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 18.11620802618563
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.04691688809543848
     },
     {
       "id": "q131",
       "query": "[multi_concept] example query number 131 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2",
         "python_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 18.865416990593076
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.04724995233118534
     },
     {
       "id": "q132",
       "query": "[multi_concept] example query number 132 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3185,24 +3185,24 @@
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 18.696999992243946
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.125,
+      "latency_ms": 0.047042034566402435
     },
     {
       "id": "q133",
       "query": "[multi_concept] example query number 133 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3211,73 +3211,73 @@
       "recall@1": 0.0,
       "recall@5": 0.5,
       "recall@10": 0.5,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 17.959000077098608
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04683306906372309
     },
     {
       "id": "q134",
       "query": "[multi_concept] example query number 134 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1",
         "python_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 17.509459052234888
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.04700000863522291
     },
     {
       "id": "q135",
       "query": "[multi_concept] example query number 135 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2",
         "python_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 16.702207969501615
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.04700000863522291
     },
     {
       "id": "q136",
       "query": "[multi_concept] example query number 136 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3285,24 +3285,24 @@
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 16.773334005847573
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.125,
+      "latency_ms": 0.04654203075915575
     },
     {
       "id": "q137",
       "query": "[multi_concept] example query number 137 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3311,73 +3311,73 @@
       "recall@1": 0.0,
       "recall@5": 0.5,
       "recall@10": 0.5,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 18.448791932314634
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04700000863522291
     },
     {
       "id": "q138",
       "query": "[multi_concept] example query number 138 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1",
         "python_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 20.571375032886863
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.04737498238682747
     },
     {
       "id": "q139",
       "query": "[multi_concept] example query number 139 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2",
         "python_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 19.7713749948889
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.046375091187655926
     },
     {
       "id": "q140",
       "query": "[multi_concept] example query number 140 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3385,24 +3385,24 @@
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.350417005829513
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.125,
+      "latency_ms": 0.046874978579580784
     },
     {
       "id": "q141",
       "query": "[multi_concept] example query number 141 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3411,73 +3411,73 @@
       "recall@1": 0.0,
       "recall@5": 0.5,
       "recall@10": 0.5,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 20.2785839792341
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04704191815108061
     },
     {
       "id": "q142",
       "query": "[multi_concept] example query number 142 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1",
         "python_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 18.960459041409194
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.04641700070351362
     },
     {
       "id": "q143",
       "query": "[multi_concept] example query number 143 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2",
         "python_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.598958944901824
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.0463330652564764
     },
     {
       "id": "q144",
       "query": "[multi_concept] example query number 144 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3485,24 +3485,24 @@
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.160332904197276
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.125,
+      "latency_ms": 0.046792090870440006
     },
     {
       "id": "q145",
       "query": "[multi_concept] example query number 145 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3511,73 +3511,73 @@
       "recall@1": 0.0,
       "recall@5": 0.5,
       "recall@10": 0.5,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 18.944333074614406
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04679197445511818
     },
     {
       "id": "q146",
       "query": "[multi_concept] example query number 146 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1",
         "python_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 21.493791020475328
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.04666706081479788
     },
     {
       "id": "q147",
       "query": "[multi_concept] example query number 147 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_2",
         "python_2"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.109292003326118
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.2,
+      "latency_ms": 0.046874978579580784
     },
     {
       "id": "q148",
       "query": "[multi_concept] example query number 148 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
-        "python_1",
-        "python_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3585,24 +3585,24 @@
       ],
       "recall@1": 0.0,
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 20.859000040218234
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.125,
+      "latency_ms": 0.04641606938093901
     },
     {
       "id": "q149",
       "query": "[multi_concept] example query number 149 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "kafka_1",
-        "kafka_1",
-        "python_0",
-        "python_0",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3611,33 +3611,33 @@
       "recall@1": 0.0,
       "recall@5": 0.5,
       "recall@10": 0.5,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.61908396333456
+      "reciprocal_rank": 0.25,
+      "latency_ms": 0.04741607699543238
     },
     {
       "id": "q150",
       "query": "[multi_concept] example query number 150 about multi_concept topics",
       "retrieved_ids": [
         "fastapi_1",
-        "fastapi_1",
-        "python_0",
-        "python_0",
-        "kafka_1",
-        "kafka_1",
+        "kafka_5",
         "fastapi_0",
-        "fastapi_0",
-        "python_1",
-        "python_1"
+        "kafka_0",
+        "kafka_2",
+        "kafka_1",
+        "fastapi_4",
+        "kafka_3",
+        "kafka_4",
+        "kafka_6"
       ],
       "relevant_ids": [
         "kafka_1",
         "python_1"
       ],
       "recall@1": 0.0,
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "reciprocal_rank": 0.2,
-      "latency_ms": 19.849083968438208
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "reciprocal_rank": 0.16666666666666666,
+      "latency_ms": 0.047042034566402435
     }
   ]
 }

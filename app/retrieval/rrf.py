@@ -1,24 +1,43 @@
 from typing import List, Dict
+from collections import defaultdict
 
 
 def reciprocal_rank_fusion(result_lists: List[List[Dict]], k: int = 60) -> List[Dict]:
-    """Combine ranked result lists using Reciprocal Rank Fusion (RRF).
+    """Reciprocal Rank Fusion (RRF).
 
-    Each entry in `result_lists` is a list of documents represented as dicts
-    with at least an `id` key. Returns a fused list of documents ordered by
-    fused score (descending).
+    result_lists: list of ranked lists (best->worst). Each item must have an
+    `id` key and may include `score`, `text`, and `metadata`.
+
+    Returns fused ranked list where each result dict contains the original
+    fields plus an added `rrf_score` field.
     """
-    scores: Dict[str, float] = {}
+    scores = defaultdict(float)
     documents: Dict[str, Dict] = {}
 
     for results in result_lists:
-        for rank, document in enumerate(results, start=1):
-            doc_id = document.get("id")
-            if doc_id is None:
+        for rank, result in enumerate(results, start=1):
+            doc_id = result.get("id")
+            if not doc_id:
                 continue
 
-            scores[doc_id] = scores.get(doc_id, 0.0) + 1.0 / (k + rank)
-            documents[doc_id] = document
+            scores[doc_id] += 1.0 / (k + rank)
 
-    ranked_ids = sorted(scores.keys(), key=lambda _id: scores[_id], reverse=True)
-    return [documents[doc_id] for doc_id in ranked_ids]
+            # store representative document (do not mutate scores here)
+            if doc_id not in documents:
+                documents[doc_id] = result.copy()
+
+    ranked_ids = sorted(scores.keys(), key=lambda x: scores[x], reverse=True)
+
+    fused_results: List[Dict] = []
+    for doc_id in ranked_ids:
+        result = documents[doc_id].copy()
+        result["rrf_score"] = scores[doc_id]
+        fused_results.append(result)
+
+    return fused_results
+
+
+# Backwards-compatible alias
+def rrf_fuse(result_lists: List[List[Dict]], k: int = 60, top_n: int = 10) -> List[Dict]:
+    fused = reciprocal_rank_fusion(result_lists, k=k)
+    return fused[:top_n]

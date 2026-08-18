@@ -72,42 +72,103 @@ python scripts/preload_models.py
 This will download the model weights into your HF cache so the app starts
 without heavy downloads.
 
-## Evaluation — Vector Search Baseline
+## Evaluation — Retrieval Baselines
 
 The repository includes a small evaluation harness to measure retrieval quality
-for the vector-only baseline. Files:
+for multiple retrieval modes using the same golden dataset.
+
+Files:
 
 - `evaluation/datasets/golden_dataset.jsonl` — the golden dataset (20 queries).
-- `evaluation/runners/run_experiment.py` — runner for baseline experiments.
+- `evaluation/runners/run_experiment.py` — runner for experiments (supports `--mode vector|bm25|rrf|all`).
 - `evaluation/metrics/retrieval.py` — retrieval metric implementations.
-- `evaluation/results/vector.json` — saved results from the last run.
+- `evaluation/results/vector.json`, `evaluation/results/bm25.json`, `evaluation/results/rrf.json` — saved results from the last run.
 
-Run the vector baseline:
+Run the experiments:
 
 ```bash
 source .venv/bin/activate
-python evaluation/runners/run_experiment.py
+python evaluation/runners/run_experiment.py --mode all
 ```
 
-Results (vector baseline):
+Aggregate results (last run):
+
+Vector (semantic search)
 
 | Metric | Value |
 |---|---:|
 | Queries | 20 |
 | Recall@1 | 0.45 |
+| Recall@5 | 0.75 |
+| Recall@10 | 0.925 |
+| MRR | 0.5983 |
+| Avg latency (ms) | 29.70 |
+
+BM25 (lexical)
+
+| Metric | Value |
+|---|---:|
+| Queries | 20 |
+| Recall@1 | 0.45 |
+| Recall@5 | 0.85 |
+| Recall@10 | 1.00 |
+| MRR | 0.6325 |
+| Avg latency (ms) | 0.05 |
+
+RRF (vector + BM25 fusion)
+
+| Metric | Value |
+|---|---:|
+| Queries | 20 |
+| Recall@1 | 0.50 |
 | Recall@5 | 0.925 |
 | Recall@10 | 1.00 |
-| MRR | 0.6646 |
-| Avg latency (ms) | 61.80 |
+| MRR | 0.6875 |
+| Avg latency (ms) | 23.81 |
 
-The per-query results and detailed retrieval lists are saved to
-`evaluation/results/vector.json`. Use the same golden dataset to run
-other retrieval modes (hybrid, RRF, reranker) for fair comparisons.
+Per-query details and the full retrieved candidate lists are saved in the `evaluation/results` JSON files linked above. Use the same golden dataset to run additional modes (hybrid, reranker) for fair comparisons.
 
 Next steps:
 
-- Add BM25 / hybrid retrieval and run the same experiment.
-- Implement cross-encoder reranking and measure accuracy vs latency tradeoffs.
+- Add cross-encoder reranking and measure accuracy vs latency tradeoffs.
+- Wire RRF into the live LangGraph pipeline for hybrid retrieval (parallel retrieval → RRF → reranker → LLM).
 - Add a generation-scoring step (LLM-as-judge) to evaluate final answer correctness.
+
+**Retrieval Baseline (frozen)**
+
+Evaluated on 150 queries across five categories: semantic, exact, technical, error_code, multi_concept.
+
+Best tuned RRF configuration (recorded as the baseline):
+
+- Vector candidates: 20
+- BM25 candidates: 50
+- RRF k: 60
+- Final candidates: 5
+
+Aggregate metrics (Recall@5): **0.540**
+
+Per-category Recall@5:
+
+| Query Type | Recall@5 |
+|---|---:|
+| semantic | 0.567 |
+| exact | 0.633 |
+| technical | 0.633 |
+| error_code | 0.467 |
+| multi_concept | 0.400 |
+
+Notes: This baseline was chosen to maximize general-purpose retrieval performance across categories rather than optimizing for a single category. See `evaluation/results/rrf_asymmetric_grid.json` for the full sweep.
+
+Per-category Recall@5 (expanded 150-query dataset)
+
+| Query Type | Vector Recall@5 | BM25 Recall@5 | RRF Recall@5 |
+|---|---:|---:|---:|
+| semantic | 0.467 | 0.500 | 0.533 |
+| exact | 0.200 | 0.667 | 0.667 |
+| technical | 0.133 | 0.500 | 0.500 |
+| error_code | 0.333 | 0.667 | 0.333 |
+| multi_concept | 0.267 | 0.250 | 0.383 |
+
+Notes: dataset expanded to 150 queries (30 per category). Results suggest BM25 dominates on exact-keyword queries, vector search performs well on semantic queries, and RRF improves mixed/multi-concept queries by combining strengths of both methods. Treat these numbers as illustrative; run more extensive sweeps (different `k`, reranker inclusion) before drawing production conclusions.
 
 

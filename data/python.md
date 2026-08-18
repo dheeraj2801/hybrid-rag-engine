@@ -62,3 +62,38 @@ Further reading
 
 - The Python Packaging Authority: https://packaging.python.org
 - Effective Python, Two Scoops of Django, and real Python tutorials.
+
+
+---
+
+Category content (expanded)
+
+Choose `asyncio` for high-concurrency I/O-bound services (web servers, many simultaneous network calls). For CPU-bound workloads prefer process-based parallelism (`concurrent.futures.ProcessPoolExecutor`) or offload to specialized services. Document the concurrency model in the project README so future contributors understand when to use async vs sync code.
+
+Create and activate a venv:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+Install dev tools:
+
+```bash
+pip install black ruff mypy pytest
+```
+
+Wheel: a built-package format (`.whl`) for fast installs.
+
+sdist: source distribution containing project files used to build the package.
+
+PEP 517/518: modern packaging hooks and metadata.
+
+`MemoryError`: reduce memory usage, process large data in streams, or increase instance memory.
+
+`TimeoutError`: increase timeouts or make operations idempotent and retryable.
+
+`SystemExit`/`KeyboardInterrupt`: ensure clean shutdown handlers for long-running services.
+
+
+A robust pipeline includes formatting (`black`), lint/type checks (`ruff`, `mypy`), unit tests (`pytest`), and a deploy step that builds a container image with pinned dependencies. Run small integration tests against lightweight fixtures or localstack-style services to exercise integrations before deploying.
