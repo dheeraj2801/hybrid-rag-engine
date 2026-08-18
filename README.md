@@ -80,6 +80,7 @@ for multiple retrieval modes using the same golden dataset.
 Files:
 
 - `evaluation/datasets/golden_dataset.jsonl` — the golden dataset (20 queries).
+ - `evaluation/datasets/golden_dataset.jsonl` — the golden dataset (150 queries).
 - `evaluation/runners/run_experiment.py` — runner for experiments (supports `--mode vector|bm25|rrf|all`).
 - `evaluation/metrics/retrieval.py` — retrieval metric implementations.
 - `evaluation/results/vector.json`, `evaluation/results/bm25.json`, `evaluation/results/rrf.json` — saved results from the last run.
@@ -91,40 +92,40 @@ source .venv/bin/activate
 python evaluation/runners/run_experiment.py --mode all
 ```
 
-Aggregate results (last run):
+Aggregate results (last run on the 150-query golden dataset):
 
 Vector (semantic search)
 
 | Metric | Value |
 |---|---:|
-| Queries | 20 |
-| Recall@1 | 0.45 |
-| Recall@5 | 0.75 |
-| Recall@10 | 0.925 |
-| MRR | 0.5983 |
-| Avg latency (ms) | 29.70 |
+| Queries | 150 |
+| Recall@1 | 0.04 |
+| Recall@5 | 0.28 |
+| Recall@10 | 0.483 |
+| MRR | 0.141 |
+| Avg latency (ms) | 21.69 |
 
 BM25 (lexical)
 
 | Metric | Value |
 |---|---:|
-| Queries | 20 |
-| Recall@1 | 0.45 |
-| Recall@5 | 0.85 |
-| Recall@10 | 1.00 |
-| MRR | 0.6325 |
-| Avg latency (ms) | 0.05 |
+| Queries | 150 |
+| Recall@1 | 0.053 |
+| Recall@5 | 0.517 |
+| Recall@10 | 0.653 |
+| MRR | 0.221 |
+| Avg latency (ms) | 0.055 |
 
 RRF (vector + BM25 fusion)
 
 | Metric | Value |
 |---|---:|
-| Queries | 20 |
-| Recall@1 | 0.50 |
-| Recall@5 | 0.925 |
-| Recall@10 | 1.00 |
-| MRR | 0.6875 |
-| Avg latency (ms) | 23.81 |
+| Queries | 150 |
+| Recall@1 | 0.067 |
+| Recall@5 | 0.483 |
+| Recall@10 | 0.890 |
+| MRR | 0.272 |
+| Avg latency (ms) | 20.73 |
 
 Per-query details and the full retrieved candidate lists are saved in the `evaluation/results` JSON files linked above. Use the same golden dataset to run additional modes (hybrid, reranker) for fair comparisons.
 
