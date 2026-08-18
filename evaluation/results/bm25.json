@@ -5,8 +5,8 @@
     "recall@1": 0.05333333333333334,
     "recall@5": 0.5166666666666667,
     "recall@10": 0.6533333333333333,
-    "mrr": 0.22141534391534384,
-    "avg_latency_ms": 0.054589794017374516
+    "mrr": 0.24279507529507507,
+    "avg_latency_ms": 0.05190000248452028
   },
   "per_query": [
     {
@@ -22,7 +22,15 @@
         "kafka_2",
         "fastapi_4",
         "kafka_3",
-        "kafka_4"
+        "kafka_4",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -31,7 +39,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.24329195730388165
+      "latency_ms": 0.4556250059977174
     },
     {
       "id": "q002",
@@ -46,7 +54,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -55,7 +71,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.5,
-      "latency_ms": 0.06887491326779127
+      "latency_ms": 0.06154098082333803
     },
     {
       "id": "q003",
@@ -70,7 +86,15 @@
         "kafka_1",
         "fastapi_4",
         "kafka_3",
-        "kafka_4"
+        "kafka_4",
+        "kafka_6",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_2"
@@ -78,8 +102,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.06008404307067394
+      "reciprocal_rank": 0.07692307692307693,
+      "latency_ms": 0.05612499080598354
     },
     {
       "id": "q004",
@@ -94,7 +118,15 @@
         "kafka_1",
         "fastapi_4",
         "kafka_3",
-        "kafka_4"
+        "kafka_4",
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3"
@@ -103,7 +135,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.1111111111111111,
-      "latency_ms": 0.05379202775657177
+      "latency_ms": 0.0552500132471323
     },
     {
       "id": "q005",
@@ -118,7 +150,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -127,7 +167,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 0.052749994210898876
+      "latency_ms": 0.05408399738371372
     },
     {
       "id": "q006",
@@ -142,7 +182,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -150,8 +198,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05224999040365219
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.0527920201420784
     },
     {
       "id": "q007",
@@ -166,7 +214,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -175,7 +231,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.05162495654076338
+      "latency_ms": 0.05266594234853983
     },
     {
       "id": "q008",
@@ -190,7 +246,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -199,7 +263,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.5,
-      "latency_ms": 0.05316699389368296
+      "latency_ms": 0.05091610364615917
     },
     {
       "id": "q009",
@@ -214,7 +278,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -222,8 +294,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.0576250022277236
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.04837499000132084
     },
     {
       "id": "q010",
@@ -238,7 +310,15 @@
         "kafka_1",
         "fastapi_4",
         "kafka_3",
-        "kafka_4"
+        "kafka_4",
+        "kafka_6",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -247,7 +327,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.14285714285714285,
-      "latency_ms": 0.05291705019772053
+      "latency_ms": 0.04908395931124687
     },
     {
       "id": "q011",
@@ -262,7 +342,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -271,7 +359,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 0.05124998278915882
+      "latency_ms": 0.048874993808567524
     },
     {
       "id": "q012",
@@ -286,7 +374,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_3"
@@ -294,8 +390,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05070806946605444
+      "reciprocal_rank": 0.07142857142857142,
+      "latency_ms": 0.04804099444299936
     },
     {
       "id": "q013",
@@ -310,7 +406,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -319,7 +423,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.0504170311614871
+      "latency_ms": 0.04841701593250036
     },
     {
       "id": "q014",
@@ -334,7 +438,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -343,7 +455,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 0.05558389239013195
+      "latency_ms": 0.048208050429821014
     },
     {
       "id": "q015",
@@ -358,7 +470,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_2"
@@ -366,8 +486,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05083298310637474
+      "reciprocal_rank": 0.07692307692307693,
+      "latency_ms": 0.04795799031853676
     },
     {
       "id": "q016",
@@ -382,7 +502,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3"
@@ -391,7 +519,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.125,
-      "latency_ms": 0.05549995694309473
+      "latency_ms": 0.048042042180895805
     },
     {
       "id": "q017",
@@ -406,7 +534,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -415,7 +551,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 0.050458009354770184
+      "latency_ms": 0.048291985876858234
     },
     {
       "id": "q018",
@@ -430,7 +566,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -438,8 +582,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05012506153434515
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.048083020374178886
     },
     {
       "id": "q019",
@@ -454,7 +598,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -463,7 +615,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.051292008720338345
+      "latency_ms": 0.04879198968410492
     },
     {
       "id": "q020",
@@ -478,7 +630,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -487,7 +647,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 0.0512079568579793
+      "latency_ms": 0.04791701212525368
     },
     {
       "id": "q021",
@@ -502,7 +662,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -510,8 +678,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.050709000788629055
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.048708985559642315
     },
     {
       "id": "q022",
@@ -526,7 +694,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -535,7 +711,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.053875031881034374
+      "latency_ms": 0.04891690332442522
     },
     {
       "id": "q023",
@@ -550,7 +726,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -559,7 +743,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 0.05866703577339649
+      "latency_ms": 0.047791050747036934
     },
     {
       "id": "q024",
@@ -574,7 +758,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_3"
@@ -582,8 +774,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05162495654076338
+      "reciprocal_rank": 0.07142857142857142,
+      "latency_ms": 0.04854192957282066
     },
     {
       "id": "q025",
@@ -598,7 +790,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -607,7 +807,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.049875001423060894
+      "latency_ms": 0.04779093433171511
     },
     {
       "id": "q026",
@@ -622,7 +822,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -631,7 +839,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 0.05100003909319639
+      "latency_ms": 0.0477079302072525
     },
     {
       "id": "q027",
@@ -646,7 +854,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_2"
@@ -654,8 +870,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.050458009354770184
+      "reciprocal_rank": 0.07692307692307693,
+      "latency_ms": 0.0479590380564332
     },
     {
       "id": "q028",
@@ -670,7 +886,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3"
@@ -679,7 +903,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.125,
-      "latency_ms": 0.05112506914883852
+      "latency_ms": 0.04733307287096977
     },
     {
       "id": "q029",
@@ -694,7 +918,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_1"
@@ -703,7 +935,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 1.0,
-      "latency_ms": 0.050709000788629055
+      "latency_ms": 0.04845892544835806
     },
     {
       "id": "q030",
@@ -718,7 +950,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -726,8 +966,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.050332979299128056
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.04758394788950682
     },
     {
       "id": "q031",
@@ -742,7 +982,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -751,7 +999,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.050749978981912136
+      "latency_ms": 0.04870793782174587
     },
     {
       "id": "q032",
@@ -766,7 +1014,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -775,7 +1031,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.05749997217208147
+      "latency_ms": 0.04837499000132084
     },
     {
       "id": "q033",
@@ -790,7 +1046,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -798,8 +1062,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05983398295938969
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.048042042180895805
     },
     {
       "id": "q034",
@@ -814,7 +1078,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -823,7 +1095,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.05324999801814556
+      "latency_ms": 0.04837499000132084
     },
     {
       "id": "q035",
@@ -838,7 +1110,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -847,7 +1127,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.05112506914883852
+      "latency_ms": 0.047874986194074154
     },
     {
       "id": "q036",
@@ -862,7 +1142,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -870,8 +1158,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05691696424037218
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.04770804662257433
     },
     {
       "id": "q037",
@@ -886,7 +1174,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -895,7 +1191,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.05033309571444988
+      "latency_ms": 0.04820793401449919
     },
     {
       "id": "q038",
@@ -910,7 +1206,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -919,7 +1223,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04945893306285143
+      "latency_ms": 0.048166955821216106
     },
     {
       "id": "q039",
@@ -934,7 +1238,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -942,8 +1254,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05191704258322716
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.05049991887062788
     },
     {
       "id": "q040",
@@ -958,7 +1270,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -967,7 +1287,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.04995905328541994
+      "latency_ms": 0.04749989602714777
     },
     {
       "id": "q041",
@@ -982,7 +1302,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -991,7 +1319,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.050083035603165627
+      "latency_ms": 0.04833401180803776
     },
     {
       "id": "q042",
@@ -1006,7 +1334,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -1014,8 +1350,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05016603972762823
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.048332964070141315
     },
     {
       "id": "q043",
@@ -1030,7 +1366,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1039,7 +1383,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.04945893306285143
+      "latency_ms": 0.04779198206961155
     },
     {
       "id": "q044",
@@ -1054,7 +1398,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1063,7 +1415,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.049208058044314384
+      "latency_ms": 0.047625042498111725
     },
     {
       "id": "q045",
@@ -1078,7 +1430,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -1086,8 +1446,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04983402322977781
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.047749956138432026
     },
     {
       "id": "q046",
@@ -1102,7 +1462,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1111,7 +1479,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.04995905328541994
+      "latency_ms": 0.047749956138432026
     },
     {
       "id": "q047",
@@ -1126,7 +1494,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1135,7 +1511,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.050083035603165627
+      "latency_ms": 0.047874986194074154
     },
     {
       "id": "q048",
@@ -1150,7 +1526,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -1158,8 +1542,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04991691093891859
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.0479590380564332
     },
     {
       "id": "q049",
@@ -1174,7 +1558,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1183,7 +1575,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.05024997517466545
+      "latency_ms": 0.047625042498111725
     },
     {
       "id": "q050",
@@ -1198,7 +1590,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1207,7 +1607,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04958396311849356
+      "latency_ms": 0.04754099063575268
     },
     {
       "id": "q051",
@@ -1222,7 +1622,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -1230,8 +1638,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04991702735424042
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.04783307667821646
     },
     {
       "id": "q052",
@@ -1246,7 +1654,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1255,7 +1671,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.05562498699873686
+      "latency_ms": 0.047999899834394455
     },
     {
       "id": "q053",
@@ -1270,7 +1686,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1279,7 +1703,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04975008778274059
+      "latency_ms": 0.047749956138432026
     },
     {
       "id": "q054",
@@ -1294,7 +1718,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -1302,8 +1734,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05008408334106207
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.0475830165669322
     },
     {
       "id": "q055",
@@ -1318,7 +1750,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1327,7 +1767,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.049332971684634686
+      "latency_ms": 0.04791701212525368
     },
     {
       "id": "q056",
@@ -1342,7 +1782,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1351,7 +1799,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04945893306285143
+      "latency_ms": 0.047666020691394806
     },
     {
       "id": "q057",
@@ -1366,7 +1814,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -1374,8 +1830,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04979199729859829
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.047625042498111725
     },
     {
       "id": "q058",
@@ -1390,7 +1846,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1399,7 +1863,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.049459049478173256
+      "latency_ms": 0.04766695201396942
     },
     {
       "id": "q059",
@@ -1414,7 +1878,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1423,7 +1895,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04983402322977781
+      "latency_ms": 0.0479590380564332
     },
     {
       "id": "q060",
@@ -1438,7 +1910,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -1446,8 +1926,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04937499761581421
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.047749956138432026
     },
     {
       "id": "q061",
@@ -1462,7 +1942,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1471,7 +1959,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.05129189230501652
+      "latency_ms": 0.04837499000132084
     },
     {
       "id": "q062",
@@ -1486,7 +1974,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -1495,7 +1991,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.05037500523030758
+      "latency_ms": 0.04858395550400019
     },
     {
       "id": "q063",
@@ -1510,7 +2006,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -1518,8 +2022,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05016603972762823
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.047958921641111374
     },
     {
       "id": "q064",
@@ -1534,7 +2038,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1543,7 +2055,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.05016708746552467
+      "latency_ms": 0.047208042815327644
     },
     {
       "id": "q065",
@@ -1558,7 +2070,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1567,7 +2087,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.05020794924348593
+      "latency_ms": 0.04779093433171511
     },
     {
       "id": "q066",
@@ -1582,7 +2102,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -1591,7 +2119,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.050042057409882545
+      "latency_ms": 0.047791050747036934
     },
     {
       "id": "q067",
@@ -1606,7 +2134,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -1614,8 +2150,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05062494892627001
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.04775007255375385
     },
     {
       "id": "q068",
@@ -1630,7 +2166,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1639,7 +2183,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.050709000788629055
+      "latency_ms": 0.047625042498111725
     },
     {
       "id": "q069",
@@ -1654,7 +2198,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1663,7 +2215,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.050709000788629055
+      "latency_ms": 0.04800001624971628
     },
     {
       "id": "q070",
@@ -1678,7 +2230,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -1687,7 +2247,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.05024997517466545
+      "latency_ms": 0.047792098484933376
     },
     {
       "id": "q071",
@@ -1702,7 +2262,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -1710,8 +2278,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.050165923312306404
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.047792098484933376
     },
     {
       "id": "q072",
@@ -1726,7 +2294,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1735,7 +2311,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.05000003147870302
+      "latency_ms": 0.04741700831800699
     },
     {
       "id": "q073",
@@ -1750,7 +2326,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1759,7 +2343,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.049833906814455986
+      "latency_ms": 0.04724995233118534
     },
     {
       "id": "q074",
@@ -1774,7 +2358,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -1783,7 +2375,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.0500829191878438
+      "latency_ms": 0.04791689570993185
     },
     {
       "id": "q075",
@@ -1798,7 +2390,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -1806,8 +2406,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05091703496873379
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.047584064304828644
     },
     {
       "id": "q076",
@@ -1822,7 +2422,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1831,7 +2439,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.052582938224077225
+      "latency_ms": 0.04741700831800699
     },
     {
       "id": "q077",
@@ -1846,7 +2454,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1855,7 +2471,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.05029106978327036
+      "latency_ms": 0.048332964070141315
     },
     {
       "id": "q078",
@@ -1870,7 +2486,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -1879,7 +2503,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.08058396633714437
+      "latency_ms": 0.07162499241530895
     },
     {
       "id": "q079",
@@ -1894,7 +2518,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -1902,8 +2534,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.16320799477398396
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.054040923714637756
     },
     {
       "id": "q080",
@@ -1918,7 +2550,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -1927,7 +2567,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.05304196383804083
+      "latency_ms": 0.05000003147870302
     },
     {
       "id": "q081",
@@ -1942,7 +2582,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -1951,7 +2599,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.06912497337907553
+      "latency_ms": 0.04924996756017208
     },
     {
       "id": "q082",
@@ -1966,7 +2614,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -1975,7 +2631,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.05041609983891249
+      "latency_ms": 0.04900002386420965
     },
     {
       "id": "q083",
@@ -1990,7 +2646,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -1998,8 +2662,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.051749986596405506
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.048874993808567524
     },
     {
       "id": "q084",
@@ -2014,7 +2678,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2023,7 +2695,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.10837498120963573
+      "latency_ms": 0.047874986194074154
     },
     {
       "id": "q085",
@@ -2038,7 +2710,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -2047,7 +2727,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.10445807129144669
+      "latency_ms": 0.04820793401449919
     },
     {
       "id": "q086",
@@ -2062,7 +2742,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -2071,7 +2759,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.06258301436901093
+      "latency_ms": 0.04745798651129007
     },
     {
       "id": "q087",
@@ -2086,7 +2774,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_1"
@@ -2094,8 +2790,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.05537504330277443
+      "reciprocal_rank": 0.08333333333333333,
+      "latency_ms": 0.04804099444299936
     },
     {
       "id": "q088",
@@ -2110,7 +2806,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2119,7 +2823,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.05295802839100361
+      "latency_ms": 0.04837499000132084
     },
     {
       "id": "q089",
@@ -2134,7 +2838,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0"
@@ -2143,7 +2855,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.056292046792805195
+      "latency_ms": 0.048625050112605095
     },
     {
       "id": "q090",
@@ -2158,7 +2870,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1"
@@ -2167,7 +2887,7 @@
       "recall@5": 0.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.05224999040365219
+      "latency_ms": 0.048083020374178886
     },
     {
       "id": "q091",
@@ -2182,7 +2902,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2191,7 +2919,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.05354208406060934
+      "latency_ms": 0.048749963752925396
     },
     {
       "id": "q092",
@@ -2206,7 +2934,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2215,7 +2951,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.0625409884378314
+      "latency_ms": 0.04904100205749273
     },
     {
       "id": "q093",
@@ -2230,7 +2966,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2238,8 +2982,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.18466694746166468
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.04837499000132084
     },
     {
       "id": "q094",
@@ -2254,7 +2998,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2263,7 +3015,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.09220791980624199
+      "latency_ms": 0.04862493369728327
     },
     {
       "id": "q095",
@@ -2278,7 +3030,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2287,7 +3047,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.05291705019772053
+      "latency_ms": 0.04795799031853676
     },
     {
       "id": "q096",
@@ -2302,7 +3062,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2310,8 +3078,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.0529169337823987
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.0503340270370245
     },
     {
       "id": "q097",
@@ -2326,7 +3094,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2335,7 +3111,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.05108397454023361
+      "latency_ms": 0.04812504630535841
     },
     {
       "id": "q098",
@@ -2350,7 +3126,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2359,7 +3143,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.051541952416300774
+      "latency_ms": 0.047666020691394806
     },
     {
       "id": "q099",
@@ -2374,7 +3158,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2382,8 +3174,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.049666035920381546
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.048042042180895805
     },
     {
       "id": "q100",
@@ -2398,7 +3190,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2407,7 +3207,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.04708394408226013
+      "latency_ms": 0.04787510260939598
     },
     {
       "id": "q101",
@@ -2422,7 +3222,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2431,7 +3239,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.047083012759685516
+      "latency_ms": 0.04766695201396942
     },
     {
       "id": "q102",
@@ -2446,7 +3254,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2454,8 +3270,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.0480839516967535
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.0475000124424696
     },
     {
       "id": "q103",
@@ -2470,7 +3286,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2479,7 +3303,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.048165908083319664
+      "latency_ms": 0.14608295168727636
     },
     {
       "id": "q104",
@@ -2494,7 +3318,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2503,7 +3335,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.047332956455647945
+      "latency_ms": 0.053582945838570595
     },
     {
       "id": "q105",
@@ -2518,7 +3350,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2526,8 +3366,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04766706842929125
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.0701249809935689
     },
     {
       "id": "q106",
@@ -2542,7 +3382,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2551,7 +3399,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.047666020691394806
+      "latency_ms": 0.04962494131177664
     },
     {
       "id": "q107",
@@ -2566,7 +3414,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2575,7 +3431,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.04754192195832729
+      "latency_ms": 0.07841701153665781
     },
     {
       "id": "q108",
@@ -2590,7 +3446,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2598,8 +3462,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04766695201396942
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.058999983593821526
     },
     {
       "id": "q109",
@@ -2614,7 +3478,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2623,7 +3495,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.049875001423060894
+      "latency_ms": 0.0524579081684351
     },
     {
       "id": "q110",
@@ -2638,7 +3510,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2647,7 +3527,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.04716706462204456
+      "latency_ms": 0.050625065341591835
     },
     {
       "id": "q111",
@@ -2662,7 +3542,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2670,8 +3558,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04683306906372309
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.04941702354699373
     },
     {
       "id": "q112",
@@ -2686,7 +3574,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2695,7 +3591,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.046791043132543564
+      "latency_ms": 0.045749940909445286
     },
     {
       "id": "q113",
@@ -2710,7 +3606,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2719,7 +3623,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.04654203075915575
+      "latency_ms": 0.045915949158370495
     },
     {
       "id": "q114",
@@ -2734,7 +3638,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2742,8 +3654,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04633399657905102
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.04624994471669197
     },
     {
       "id": "q115",
@@ -2758,7 +3670,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2767,7 +3687,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.04904100205749273
+      "latency_ms": 0.05133403465151787
     },
     {
       "id": "q116",
@@ -2782,7 +3702,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2791,7 +3719,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.04691607318818569
+      "latency_ms": 0.04783400800079107
     },
     {
       "id": "q117",
@@ -2806,7 +3734,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2814,8 +3750,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04712492227554321
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.04616600926965475
     },
     {
       "id": "q118",
@@ -2830,7 +3766,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2"
@@ -2839,7 +3783,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.04724995233118534
+      "latency_ms": 0.04545808769762516
     },
     {
       "id": "q119",
@@ -2854,7 +3798,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "fastapi_0"
@@ -2863,7 +3815,7 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "reciprocal_rank": 0.3333333333333333,
-      "latency_ms": 0.04670792259275913
+      "latency_ms": 0.0451250234618783
     },
     {
       "id": "q120",
@@ -2878,7 +3830,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "python_0"
@@ -2886,8 +3846,8 @@
       "recall@1": 0.0,
       "recall@5": 0.0,
       "recall@10": 0.0,
-      "reciprocal_rank": 0.0,
-      "latency_ms": 0.04695798270404339
+      "reciprocal_rank": 0.09090909090909091,
+      "latency_ms": 0.04575005732476711
     },
     {
       "id": "q121",
@@ -2902,7 +3862,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -2912,7 +3880,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04758394788950682
+      "latency_ms": 0.04662491846829653
     },
     {
       "id": "q122",
@@ -2927,7 +3895,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1",
@@ -2937,7 +3913,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.04712503869086504
+      "latency_ms": 0.045749940909445286
     },
     {
       "id": "q123",
@@ -2952,7 +3928,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2",
@@ -2962,7 +3946,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.04654203075915575
+      "latency_ms": 0.045958091504871845
     },
     {
       "id": "q124",
@@ -2977,7 +3961,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -2987,7 +3979,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.125,
-      "latency_ms": 0.046874978579580784
+      "latency_ms": 0.0452499371021986
     },
     {
       "id": "q125",
@@ -3002,7 +3994,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3012,7 +4012,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.046874978579580784
+      "latency_ms": 0.045500113628804684
     },
     {
       "id": "q126",
@@ -3027,7 +4027,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1",
@@ -3037,7 +4045,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.047625042498111725
+      "latency_ms": 0.0464579788967967
     },
     {
       "id": "q127",
@@ -3052,7 +4060,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2",
@@ -3062,7 +4078,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.04704098682850599
+      "latency_ms": 0.04579196684062481
     },
     {
       "id": "q128",
@@ -3077,7 +4093,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3087,7 +4111,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.125,
-      "latency_ms": 0.04724995233118534
+      "latency_ms": 0.04533305764198303
     },
     {
       "id": "q129",
@@ -3102,7 +4126,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3112,7 +4144,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04745891783386469
+      "latency_ms": 0.04558300133794546
     },
     {
       "id": "q130",
@@ -3127,7 +4159,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1",
@@ -3137,7 +4177,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.04691688809543848
+      "latency_ms": 0.04633399657905102
     },
     {
       "id": "q131",
@@ -3152,7 +4192,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2",
@@ -3162,7 +4210,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.04724995233118534
+      "latency_ms": 0.04566693678498268
     },
     {
       "id": "q132",
@@ -3177,7 +4225,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3187,7 +4243,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.125,
-      "latency_ms": 0.047042034566402435
+      "latency_ms": 0.044874963350594044
     },
     {
       "id": "q133",
@@ -3202,7 +4258,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3212,7 +4276,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04683306906372309
+      "latency_ms": 0.045042019337415695
     },
     {
       "id": "q134",
@@ -3227,7 +4291,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1",
@@ -3237,7 +4309,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.04700000863522291
+      "latency_ms": 0.045459019020199776
     },
     {
       "id": "q135",
@@ -3252,7 +4324,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2",
@@ -3262,7 +4342,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.04700000863522291
+      "latency_ms": 0.045082997530698776
     },
     {
       "id": "q136",
@@ -3277,7 +4357,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3287,7 +4375,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.125,
-      "latency_ms": 0.04654203075915575
+      "latency_ms": 0.04449998959898949
     },
     {
       "id": "q137",
@@ -3302,7 +4390,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3312,7 +4408,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04700000863522291
+      "latency_ms": 0.045082997530698776
     },
     {
       "id": "q138",
@@ -3327,7 +4423,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1",
@@ -3337,7 +4441,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.04737498238682747
+      "latency_ms": 0.04499999340623617
     },
     {
       "id": "q139",
@@ -3352,7 +4456,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2",
@@ -3362,7 +4474,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.046375091187655926
+      "latency_ms": 0.04487507976591587
     },
     {
       "id": "q140",
@@ -3377,7 +4489,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3387,7 +4507,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.125,
-      "latency_ms": 0.046874978579580784
+      "latency_ms": 0.044915941543877125
     },
     {
       "id": "q141",
@@ -3402,7 +4522,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3412,7 +4540,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04704191815108061
+      "latency_ms": 0.04470802377909422
     },
     {
       "id": "q142",
@@ -3427,7 +4555,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1",
@@ -3437,7 +4573,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.04641700070351362
+      "latency_ms": 0.04458392504602671
     },
     {
       "id": "q143",
@@ -3452,7 +4588,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2",
@@ -3462,7 +4606,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.0463330652564764
+      "latency_ms": 0.04520907532423735
     },
     {
       "id": "q144",
@@ -3477,7 +4621,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3487,7 +4639,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.125,
-      "latency_ms": 0.046792090870440006
+      "latency_ms": 0.044958898797631264
     },
     {
       "id": "q145",
@@ -3502,7 +4654,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3512,7 +4672,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04679197445511818
+      "latency_ms": 0.04549999721348286
     },
     {
       "id": "q146",
@@ -3527,7 +4687,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1",
@@ -3537,7 +4705,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.04666706081479788
+      "latency_ms": 0.04566705320030451
     },
     {
       "id": "q147",
@@ -3552,7 +4720,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_2",
@@ -3562,7 +4738,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.2,
-      "latency_ms": 0.046874978579580784
+      "latency_ms": 0.04545808769762516
     },
     {
       "id": "q148",
@@ -3577,7 +4753,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_3",
@@ -3587,7 +4771,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.125,
-      "latency_ms": 0.04641606938093901
+      "latency_ms": 0.044874963350594044
     },
     {
       "id": "q149",
@@ -3602,7 +4786,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_0",
@@ -3612,7 +4804,7 @@
       "recall@5": 0.5,
       "recall@10": 0.5,
       "reciprocal_rank": 0.25,
-      "latency_ms": 0.04741607699543238
+      "latency_ms": 0.04850002005696297
     },
     {
       "id": "q150",
@@ -3627,7 +4819,15 @@
         "fastapi_4",
         "kafka_3",
         "kafka_4",
-        "kafka_6"
+        "kafka_6",
+        "python_0",
+        "python_1",
+        "python_2",
+        "python_3",
+        "python_4",
+        "python_5",
+        "fastapi_2",
+        "fastapi_3"
       ],
       "relevant_ids": [
         "kafka_1",
@@ -3637,7 +4837,7 @@
       "recall@5": 0.0,
       "recall@10": 0.5,
       "reciprocal_rank": 0.16666666666666666,
-      "latency_ms": 0.047042034566402435
+      "latency_ms": 0.045874970965087414
     }
   ]
 }
