@@ -10,10 +10,12 @@ from app.retrieval.rrf import reciprocal_rank_fusion
 
 DS_PATH = Path("evaluation/datasets/golden_dataset.jsonl")
 
-vec_k = 10
-bm_k = 10
-rrf_k = 60
-final_k = 5
+from app.retrieval import config as cfg
+
+vec_k = None
+bm_k = None
+rrf_k = None
+final_k = None
 
 dataset = [json.loads(line) for line in DS_PATH.open("r", encoding="utf-8")]
 
@@ -25,16 +27,21 @@ for tc in dataset:
     query = tc["query"]
     relevant = tc.get("relevant_chunk_ids", [])
 
-    v_docs = vector_store.similarity_search(query, k=vec_k)
+    _vec_k = vec_k if vec_k is not None else cfg.VECTOR_K
+    _bm_k = bm_k if bm_k is not None else cfg.BM25_K
+    _rrf_k = rrf_k if rrf_k is not None else cfg.RRF_K
+    _final_k = final_k if final_k is not None else cfg.FINAL_K
+
+    v_docs = vector_store.similarity_search(query, k=_vec_k)
     v_results = []
     for d in v_docs:
         meta = getattr(d, "metadata", {}) or {}
         v_results.append({"id": meta.get("chunk_id") or meta.get("orig_id") or meta.get("id")})
 
-    b_results = bm25_retriever.search(query, k=bm_k)
+    b_results = bm25_retriever.search(query, k=_bm_k)
 
-    fused_all = reciprocal_rank_fusion([v_results, b_results], k=rrf_k)
-    fused = fused_all[:final_k]
+    fused_all = reciprocal_rank_fusion([v_results, b_results], k=_rrf_k)
+    fused = fused_all[:_final_k]
 
     bm_ids = [r.get("id") for r in b_results]
     fused_ids = [r.get("id") for r in fused]

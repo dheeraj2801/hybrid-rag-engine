@@ -7,12 +7,14 @@ from evaluation.metrics.retrieval import recall_at_k, mean
 from app.retrieval.vector_store import vector_store
 from app.retrieval.bm25_service import bm25_retriever
 from app.retrieval.rrf import reciprocal_rank_fusion
+from app.retrieval import config as cfg
 
 DS_PATH = Path("evaluation/datasets/golden_dataset.jsonl")
 OUT_DIR = Path("evaluation/results")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # tuning configurations: (vec_k, bm_k, rrf_k, final_k)
+# If any entry uses None, the value will be taken from `app.retrieval.config` defaults.
 CONFIGS = [
     (10, 10, 60, 5),
     (20, 20, 60, 5),
@@ -60,17 +62,23 @@ for vec_k, bm_k, rrf_k, final_k in CONFIGS:
 
         # vector
         v_start = time.perf_counter()
-        v_docs = vector_store.similarity_search(query, k=vec_k)
+        # fall back to config defaults when a value is None
+        _vec_k = vec_k if vec_k is not None else cfg.VECTOR_K
+        _bm_k = bm_k if bm_k is not None else cfg.BM25_K
+        _rrf_k = rrf_k if rrf_k is not None else cfg.RRF_K
+        _final_k = final_k if final_k is not None else cfg.FINAL_K
+
+        v_docs = vector_store.similarity_search(query, k=_vec_k)
         v_lat = (time.perf_counter() - v_start) * 1000.0
         v_results = normalize_vector_docs(v_docs)
 
         # bm25
         b_start = time.perf_counter()
-        b_results = bm25_retriever.search(query, k=bm_k)
+        b_results = bm25_retriever.search(query, k=_bm_k)
         b_lat = (time.perf_counter() - b_start) * 1000.0
 
-        fused_all = reciprocal_rank_fusion([v_results, b_results], k=rrf_k)
-        fused = fused_all[:final_k]
+        fused_all = reciprocal_rank_fusion([v_results, b_results], k=_rrf_k)
+        fused = fused_all[:_final_k]
 
         retrieved_ids = [r.get("id") for r in fused]
         r5 = recall_at_k(retrieved_ids, relevant, 5)

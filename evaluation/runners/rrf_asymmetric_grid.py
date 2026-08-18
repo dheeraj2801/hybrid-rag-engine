@@ -7,6 +7,7 @@ from evaluation.metrics.retrieval import recall_at_k, reciprocal_rank, mean
 from app.retrieval.vector_store import vector_store
 from app.retrieval.bm25_service import bm25_retriever
 from app.retrieval.rrf import reciprocal_rank_fusion
+from app.retrieval import config as cfg
 
 DS_PATH = Path("evaluation/datasets/golden_dataset.jsonl")
 OUT_DIR = Path("evaluation/results")
@@ -38,7 +39,7 @@ def normalize_vector_docs(docs: List[Any]) -> List[Dict[str, Any]]:
     return out
 
 
-def run_config(vec_k: int, bm_k: int, rrf_k: int, final_k: int) -> Dict[str, Any]:
+def run_config(vec_k: int | None, bm_k: int | None, rrf_k: int | None, final_k: int | None) -> Dict[str, Any]:
     per_query = []
     recall5 = []
     rr_vals = []
@@ -53,20 +54,26 @@ def run_config(vec_k: int, bm_k: int, rrf_k: int, final_k: int) -> Dict[str, Any
             query = tc["query"]
             relevant = tc.get("relevant_chunk_ids", [])
 
+            # use config defaults when None
+            _vec_k = vec_k if vec_k is not None else cfg.VECTOR_K
+            _bm_k = bm_k if bm_k is not None else cfg.BM25_K
+            _rrf_k = rrf_k if rrf_k is not None else cfg.RRF_K
+            _final_k = final_k if final_k is not None else cfg.FINAL_K
+
             v_start = time.perf_counter()
-            v_docs = vector_store.similarity_search(query, k=vec_k)
+            v_docs = vector_store.similarity_search(query, k=_vec_k)
             v_lat = (time.perf_counter() - v_start) * 1000.0
             v_results = normalize_vector_docs(v_docs)
 
             b_start = time.perf_counter()
-            b_results = bm25_retriever.search(query, k=bm_k)
+            b_results = bm25_retriever.search(query, k=_bm_k)
             b_lat = (time.perf_counter() - b_start) * 1000.0
 
             fuse_start = time.perf_counter()
-            fused_all = reciprocal_rank_fusion([v_results, b_results], k=rrf_k)
+            fused_all = reciprocal_rank_fusion([v_results, b_results], k=_rrf_k)
             fuse_lat = (time.perf_counter() - fuse_start) * 1000.0
 
-            fused = fused_all[:final_k]
+            fused = fused_all[:_final_k]
             retrieved_ids = [r.get("id") for r in fused]
 
             r5 = recall_at_k(retrieved_ids, relevant, 5)
